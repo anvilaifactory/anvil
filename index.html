@@ -477,6 +477,22 @@
             width: 0%;
             transition: width 0.1s ease;
         }
+
+.services-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* spreads them out */
+    align-items: stretch; /* makes all cards equal height */
+    gap: 20px; /* spacing between cards */
+    flex-wrap: nowrap; /* keeps them in one row */
+    overflow-x: auto; /* adds scroll if screen is too small */
+}
+.service-card {
+    flex: 1 1 20%; /* each card takes equal width */
+    min-width: 250px; /* prevents them from getting too small */
+}
+
+            
     </style>
 </head>
 <body>
